@@ -1,0 +1,332 @@
+* {
+    font-family: "Poppins", serif;
+}
+
+.template-flex {
+display: flex;
+}
+
+.card1 {
+    width: 500px;
+    height: 100vh;
+    background: linear-gradient(to right,#007AFF,#0F70DA );
+
+}
+
+.template-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card1 h2 {
+    text-align: center;
+    color: White;
+    font-size: 16px;
+    font-weight: 600;
+   padding: 10px 10px;
+}
+
+.card2 {
+    width: 500px;
+    height: 90vh; 
+
+}
+.circle-gradient {
+  width:350px;  
+  height: 350px;
+  border-radius: 400px;
+  background: linear-gradient(to right,#007AFF,#0F70DA );
+  margin: 70px 0px 0 70px;
+ margin-top: 0px;
+}
+
+.circle-gradient img1 {
+    width: 280;
+    height: 380; 
+}
+.circle-gradient span {
+    padding: 10px 0 0 120px;
+    
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+}
+
+.form-head h1{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.form-head p {
+   font-size: 12px;
+   margin-top: 0;
+}
+
+.list-form {
+    display: flex;
+    gap: 20px;
+}
+
+.input-div input{
+    width: 230px;
+    height: 30px;
+}
+
+.input-div label {
+    font-size: 12px;
+}
+
+.remember-session {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+.remember-session label {
+    font-size: 12px;
+}
+.remember-session span {
+    padding-left: 240px;
+    font-size: 12px;
+    color: #007AFF;
+    cursor: pointer;
+}
+
+.Privacy-policy {
+    padding-bottom: 5px;
+}
+.Privacy-policy label {
+    font-size: 12px;
+}
+
+.Privacy-policy span {
+    color: #007AFF;
+    cursor: pointer;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button1 {
+    width: 230px;
+    height: 35px;
+    font-size: 12px;
+    background-color: #007AFF;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button2 {
+    width: 230px;
+    height: 35px;
+    font-size: 12px;
+    background-color: #2D3748;
+    color: #FFF; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button2 img {
+    height: 15px;
+    padding-left: 5px;
+    
+}
+
+.login {
+    padding-left:150px;
+    
+}
+
+.login p {
+    font-size: 12px;
+}
+
+.login span {
+    color: #007AFF;
+}
+
+.stores {
+    padding-top: 40px;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    display: block;
+}
+
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 480px) {
+    .template-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0px; /* Reduce unnecessary space */
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+        height: auto;
+        padding: 40px 10px; /* Added padding for space */
+        text-align: center;
+        position: relative;
+        top: -20px; /* Push Card 1 UP */
+    }
+
+    .card2 {
+        width: 90%;
+        height: auto;
+        padding: 30px 10px;
+        position: relative;
+        top: 0; /* Keeps Card 2 properly positioned */
+        z-index: 10; /* Ensures it doesn’t get overlapped */
+        background: white; /* Keep background solid to prevent visual overlap */
+    }
+
+    .circle-gradient {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto; /* Centers and adjusts margin */
+    }
+
+    .list-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-div input {
+        width: 100%;
+    }
+
+    .button-div {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .button1, .button2 {
+        width: 100%;
+    }
+
+    .login {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .stores {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .template-flex {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+        position: relative;
+        top: -30px; /* Push Card 1 UP */
+    }
+
+    .card2 {
+        width: 85%;
+        height: auto;
+        padding: 40px;
+        position: relative;
+        top: 0;
+        z-index: 10;
+        background: white;
+    }
+
+    .circle-gradient {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .list-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-div input {
+        width: 100%;
+    }
+
+    .button-div {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .button1, .button2 {
+        width: 100%;
+    }
+
+    .login {
+        text-align: center;
+    }
+
+    .stores {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .template-flex {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .card1 {
+        width: 400px;
+        height: 100vh;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        top: -20px; /* Push Card 1 UP */
+    }
+
+    .card2 {
+        width: 400px;
+        height: 90vh;
+        padding: 40px;
+        position: relative;
+        top: 0;
+        z-index: 10;
+        background: white;
+    }
+
+    .circle-gradient {
+        width: 280px;
+        height: 280px;
+        margin: 20px auto;
+    }
+}
